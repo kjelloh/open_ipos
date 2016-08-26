@@ -1,0 +1,3 @@
+[submodule "build/src/external/tris"]
+	path = build/src/external/tris
+	url = https://github.com/kjelloh/tris.git

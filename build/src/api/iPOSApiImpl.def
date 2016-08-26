@@ -1,0 +1,9 @@
+LIBRARY  zepos_api
+
+EXPORTS  
+	ipos_Close
+	ipos_Conf
+	ipos_GetVersion
+	ipos_Init
+	ipos_Read
+	ipos_Write
