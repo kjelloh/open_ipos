@@ -31,8 +31,8 @@ set(API_SOURCE_FILES
     src/api/iPOSApiImpl.def
 	src/api/APIFiniteStateMachine.cpp
 	src/api/APIFiniteStateMachine.h
-	src/api/ZeposApiCore.cpp
-	src/api/ZeposApiCore.h
+	src/api/OpeniPosAPICore.cpp
+	src/api/OpeniPosAPICore.h
 	# tris Core, Backend idiom classes
     src/external/tris/build/src/Active.cpp
     src/external/tris/build/src/Active.h

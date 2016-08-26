@@ -3,11 +3,11 @@
 #include "iPOSApiImpl.h"
 #undef IPOS_API_EXPORTS
 //---------------------------------------------------------------------------
-#include "ZeposApiCore.h"
+#include "OpeniPosAPICore.h"
 #include "APIFiniteStateMachine.h"
 //---------------------------------------------------------------------------
 
-// ZeposApiCore m_Core;
+// OpeniPosAPICore m_Core;
 c_APIFSMs api_fsms;
 
 // BEGIN iPOS API
@@ -68,9 +68,9 @@ int _stdcall ipos_GetVersion(IPOS_VERSIONINFO* versionInfo) {
     versionInfo->IsDebugVersion = false;
     // Todo 160212, Consider to apply CPP Core Guidlines for string copy (https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)
     //              E.g., https://github.com/Microsoft/GSL/blob/master/include/string_span.h?
-    safe_string_copy(std::string("zepos_api"),versionInfo->Name);
-    safe_string_copy(std::string("Swedbank AB"),versionInfo->Manufacturer);
-    safe_string_copy(std::string("Swedbank AB"),versionInfo->Copyright);
+    safe_string_copy(std::string("open_ipos_api"),versionInfo->Name);
+    safe_string_copy(std::string("The ITfied AB"),versionInfo->Manufacturer);
+    safe_string_copy(std::string("The ITfied AB"),versionInfo->Copyright);
 
     return 0;
 }
