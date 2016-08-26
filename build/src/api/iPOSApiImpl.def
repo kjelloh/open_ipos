@@ -1,4 +1,4 @@
-LIBRARY  zepos_api
+LIBRARY  open_ipos_api
 
 EXPORTS  
 	ipos_Close
