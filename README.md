@@ -18,6 +18,8 @@ C:.
 │
 └───build
     │   CMakeLists.txt
+    │   msys2_clang_me.sh
+    │   msys2_deafult_me.sh
     │   vs_me.cmd
     │
     └───src
@@ -28,8 +30,12 @@ C:.
         │   │   iPOSApiImpl.cpp
         │   │   iPOSApiImpl.def
         │   │   iPOSApiImpl.h
-        │   │   ZeposApiCore.cpp
-        │   │   ZeposApiCore.h
+        │   │   OpeniPosAPICore.cpp
+        │   │   OpeniPosAPICore.h
+        │   │
+        │   └───.vscode
+        │           .BROWSE.VC.DB
+        │           .BROWSE.VC.DB-wal
         │
         ├───app
         │       main.cpp
@@ -37,9 +43,7 @@ C:.
         │       OpeniPosFrontEnd.h
         │
         └───external
-            └───tris                    // Sub-module https://github.com/kjelloh/tris
-                │   .git
-                │   .gitignore
+            └───tris                        // sub-module https://github.com/kjelloh/tris
                 │   LICENSE
                 │   README.md
                 │
